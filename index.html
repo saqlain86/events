@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Click Event</title>
+</head>
+<style>
+    .toHide {
+        display: block;
+    }
+    a:hover {
+            color: red;
+        }
+    
+    
+</style>
+<body>
+    <button id="clickButton">Click Me</button>
+    <br>
+    
+    <button id="hideButton">Hide Element</button>
+    <div id="elementToHide" class="toHide">This is the element to hide.</div>
+    <a href="#" id="hoverLink">Hover over me</a>
+    <br>
+
+   
+    <a href="#" id="playSoundLink">Click to Play Sound</a>
+    <audio id="audio" src="sound.mp3"></audio>
+    <br>
+
+    
+
+    <button id="alertButton">Click Me</button>
+    <br>
+
+
+    
+    <a href="#" id="openWindowLink" onclick="window.open('https://www.example.com', 'Example', 'width=500,height=500');">Open New Window</a>
+    <br>
+
+    
+
+    <a href="#" id="scrollToTop">Scroll to Top</a>
+    <br>
+
+
+
+
+    <script>
+        document.getElementById("clickButton").addEventListener("click", function() {
+            console.log("Button clicked!");
+
+            document.getElementById("hideButton").addEventListener("click", function() {
+            document.getElementById("elementToHide").style.display = "none";
+
+
+            document.getElementById("playSoundLink").addEventListener("click", function() {
+            document.getElementById("audio").play();
+
+            document.getElementById("alertButton").addEventListener("click", function() {
+            alert("Button clicked!");
+
+            document.getElementById("scrollToTop").addEventListener("click", function() {
+            window.scrollTo(0, 0);
+        });
+        });
+        });
+        });
+        });
+    </script>
+</body>
+</html>
+
+
+
+   
+   
+
+
+    
+    
+
+    
+    
+       
+    
+
+
+
+   
+    
